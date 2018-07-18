@@ -36,6 +36,15 @@ function calculatesFarePrice (number1,number2) {
        return 25;
      }
    } else {
-    return ((number2-number1) * 264);
-  }
+    let feet = ((number2-number1) * 264);
+    if (feet < 400) {
+     return 0;
+   }
+     else if (feet > 400 && feet < 2000) {
+       return ((feet-400)*0.02);
+     }
+     else if (feet > 2000) {
+       return 25;
+     }
+   }
 }
