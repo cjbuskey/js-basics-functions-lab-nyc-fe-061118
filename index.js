@@ -27,7 +27,7 @@ function calculatesFarePrice (number1,number2) {
    if (number1 >= number2) {
    let feet = ((number1-number2) * 264);
    if (feet < 400) {
-     return '$'+0.00;
+     return 0.00;
    }
      else if (feet > 400 && feet < 2000) {
        return '$'+((feet-400)*0.02);
