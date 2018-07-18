@@ -25,7 +25,7 @@ function distanceTravelledInFeet (number1,number2) {
 
 function calculatesFarePrice (number1,number2) {
    if (number1 >= number2) {
-   let feet = (((number1-number2) * 264)*0)
+   let feet = ((number1-number2) * 264)
    if (feet < 400) {
      return 0;
    }
