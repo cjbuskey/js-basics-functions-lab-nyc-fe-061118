@@ -23,6 +23,8 @@ function distanceTravelledInFeet (number1,number2) {
   }
 }
 
+let feetTravelled = distanceTravelledInFeet()
+
 function calculatesFarePrice (number1,number2) {
    if (number1 >= number2) {
    let feet = ((number1-number2) * 264)
