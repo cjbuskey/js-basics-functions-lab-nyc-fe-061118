@@ -30,7 +30,7 @@ function calculatesFarePrice (number1,number2) {
      return 0.00;
    }
      else if (feet > 400 && feet < 2000) {
-       return '$'+((feet-400)*0.02);
+       return ((feet-400)*0.02);
      }
    } else {
     return ((number2-number1) * 264);
